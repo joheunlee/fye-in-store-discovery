@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to FYE!</title>
+    <link href="app.css" rel="stylesheet">
+    <link href="lib/animsition.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="lib/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/fontawesome-all.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="img/linkicon.png" />
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106458924-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-106458924-1');
+    </script>
+
+  </head>
+  <body>
+    <div class="container animsition">
+      <div id="home" class="home">
+        <div id="logo">
+          <div id="home-back" onclick="backToHome()"><i class="fa fa-angle-left fa-2x"></i><i class="fa fa-home fa-lg"></i></div>
+          <img src="img/logo.png" />
+          <div>Ready to play?</div>
+        </div>
+        <div id="main">
+          <div id="main-lucky" class="main-grid">
+            <div class="main-grid-content">
+              <div class="main-grid-img-wrapper"><img src="img/main/lucky-logo.png" /></div>
+              <button class="cta" type="button" value="Show me something cool!" name="lucky-cta" onclick="showLucky()">Show me something cool!</button>
+            </div>
+          </div>
+          <div id="main-curated" class="main-grid">
+            <div class="main-grid-content">
+              <div class="main-grid-img-wrapper"><img src="img/main/fan-quiz-logo.png" /></div>
+              <button class="cta" type="button" value="Show me something cool!" name="lucky-cta" onclick="showQuiz()">We'll guess your favorites!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="lib/jQuery/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="lib/animsition.min.js"></script>
+    <script type="text/javascript" src="lib/slick/slick.min.js"></script>
+    <script>
+      function showLucky() {
+        location.href="lucky.html";
+        $('#random-items').fadeIn(800);
+        ga('send', 'event', 'Lucky', 'start', 'Lucky-start');
+      }
+      function showQuiz() {
+        location.href="quiz.html";
+        $('#quiz-landing').fadeIn(800);
+        ga('send', 'event', 'Quiz', 'start', 'Quiz-start');
+      }
+    </script>
+    <script>
+
+    $(document).ready(function() {
+      var requestURL = '../lib/list.json';
+      var request = new XMLHttpRequest();
+      request.open('GET', requestURL);
+      request.responseType = 'json';
+      request.send();
+      $('.product-images').slick({
+          arrows: false,
+          dots: true
+        });
+
+
+      request.onload = function() {
+        var list = request.response;
+        var categories = list.moments;
+        var items = list.items;
+        
+      }
+
+      $("#item-detail").hide(); //hide the item-detail div on load
+      $("#store-map-wrapper").hide();
+
+  
+
+      $(".animsition").animsition({
+        inClass: 'fade-in',
+        outClass: 'fade-out-left-lg',
+        inDuration: 800,
+        outDuration: 800,
+        linkElement: '.animsition-link',
+        // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+        loading: true,
+        loadingParentElement: 'body', //animsition wrapper element
+        loadingClass: 'animsition-loading',
+        loadingInner: '', // e.g '<img src="loading.svg" />'
+        timeout: false,
+        timeoutCountdown: 5000,
+        onLoadEvent: true,
+        browser: [ 'animation-duration', '-webkit-animation-duration'],
+        // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+        // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+        overlay : false,
+        overlayClass : 'animsition-overlay-slide',
+        overlayParentElement : 'body',
+        transition: function(url){ window.location.href = url; }
+      });
+      
+       
+    });
+
+   
+   
+    </script>
+    <!--analytics.js-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-106458924-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+  </body>
+</html>

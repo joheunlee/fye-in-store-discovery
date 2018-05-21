@@ -1,0 +1,225 @@
+{
+	"landing": {
+		"heading": "QUIZ: Which type of fan are you?🤔",
+		"description": "Take this short quiz, and we'll guess who you are &amp; what you want!",
+		"image": "img/quiz/quiz-cover.jpg"
+	},
+	"questions": [
+		{
+			"question": "There's a new movie coming out in the theaters tomorrow! Which describes you the best?",
+			"options": [
+				{
+					"title": "I'll be in the line!",
+					"image": "img/quiz/q1/theater.jpg",
+					"description": "Tomorrow night!",
+					"resultIndex": [0, 3],
+					"weight": [1, 2]
+				},
+				{
+					"title": "Meh, I can wait...",
+					"image": "img/quiz/q1/popcorn.jpg",
+					"description": "Until the DVD/rental to come out...",
+					"resultIndex": [3],
+					"weight": [1]
+				},
+				{
+					"title": "I'm more of a small screen person!",
+					"image": "img/quiz/q1/tv.jpg",
+					"description": "or online streaming!",
+					"resultIndex": [4],
+					"weight": [2]
+				},
+				{
+					"title": "What? People still go to the theaters?",
+					"image": "img/quiz/q1/cat.jpg",
+					"description": null,
+					"resultIndex": [5],
+					"weight": [1]
+				}
+			]
+		},
+		{
+			"question": "Here's a quiz: What's Wolverine's actual first name from birth?",
+			"options": [
+				{
+					"title": "Logan, duh",
+					"image": "img/quiz/q2/logan.jpg",
+					"description": null,
+					"resultIndex": [0, 3],
+					"weight": [1, 1]
+				},
+				{
+					"title": "It's James!",
+					"image": "img/quiz/q2/james.jpg",
+					"description": null,
+					"resultIndex": [1, 3],
+					"weight": [3, 1]
+				},
+				{
+					"title": "John!",
+					"image": "img/quiz/q2/john.jpg",
+					"description": null,
+					"resultIndex": [2],
+					"weight": [1]
+				},
+				{
+					"title": "What? Who?",
+					"image": "img/quiz/q2/koala.jpg",
+					"description": "We get it.",
+					"resultIndex": [5],
+					"weight": [1]
+				}
+			]
+		},
+		{
+			"question": "Which of the following music playlist sounds the most like you?",
+			"options": [
+				{
+					"title": "New Music Friday",
+					"image": "img/quiz/q3/new-music-friday.jpg",
+					"description": null,
+					"resultIndex": [0, 5],
+					"weight": [2, 2]
+				},
+				{
+					"title": "Superpower Soundtrack",
+					"image": "img/quiz/q3/superpower-soundtrack.jpg",
+					"description": null,
+					"resultIndex": [1, 3, 5],
+					"weight": [1, 1, 1]
+				},
+				{
+					"title": "Essential Love Songs",
+					"image": "img/quiz/q3/essential-love-song.jpg",
+					"description": null,
+					"resultIndex": [5],
+					"weight": [1]
+				},
+				{
+					"title": "You gotta give me cooler options than these!",
+					"image": "img/quiz/q3/agh.jpg",
+					"description": null,
+					"resultIndex": [0],
+					"weight": [2]
+				},
+				{
+					"title": "Music isn't really my thing :(",
+					"image": "img/quiz/q3/pug.jpg",
+					"description": "That's okay!",
+					"resultIndex": [1, 2],
+					"weight": [1, 1]
+				}
+			]
+		},
+		{
+			"question": "If you had all the money in the world, what would you spend it on?",
+			"options": [
+				{
+					"title": "Upgrading my home theater!",
+					"image": "img/quiz/q4/tv.jpg",
+					"description": null,
+					"resultIndex": [3, 4],
+					"weight": [2, 2]
+				},
+				{
+					"title": "Get all the rare vinyl music out there!",
+					"image": "img/quiz/q4/vinyl.jpg",
+					"description": null,
+					"resultIndex": [5],
+					"weight": [3]
+				},
+				{
+					"title": "Expand my collection of action figures!",
+					"image": "img/quiz/q4/figure.jpg",
+					"description": null,
+					"resultIndex": [2],
+					"weight": [3]
+				},
+				{
+					"title": "Get a new smartphone!",
+					"image": "img/quiz/q4/smartphone.jpg",
+					"description": null,
+					"resultIndex": [0],
+					"weight": [2]
+				}
+			]
+		}
+	],
+	"results": [
+		{
+			"title": "Trendsetter",
+			"image": "img/quiz/result/trendsetter.jpg",
+			"description": "You know all the latest and the coolest, and all of your friends and family look to you to pick the next fun night out. You can't resist new & shiny things, and we do have one or two items that you might like!",
+			"itemList": [
+				"aec.bbgt1007.2",
+				"fye.000000680079724061",
+				"aec.ctnw1000704139br",
+				"fye.000000047532910124"
+			]
+		},
+		{
+			"title": "Superhero Buff",
+			"image": "img/quiz/result/superhero.jpg",
+			"description": "You love your comics & movies and know everything about superheroes! You are excited all year long, because, hey, there are superhero movies out every other month & new comic books every week! Here are some items for you :)",
+			"itemList": [
+				"aec.wd14767600dvd",
+				"fye.000000191685150200",
+				"fye.000000889698311168",
+				"fye.000000191685175142",
+				"fye.000000191685229494",
+				"aec.wd14899900dvd",
+				"aec.fox2310418dvd",
+				"fye.000000665398255007"
+			]
+		},
+		{
+			"title": "Serious Collector",
+			"image": "img/quiz/result/collector.jpg",
+			"description": "You have that urge to complete the collection and line them up to marvel at. It just makes you happy to see those little action figures by the franchise, by color, or whatever theme that you ahve going on! For you serious collectors out there, we've handpicked some Funko Pop!s - how many of these items do you already have? p.s. We have wayy many more in the stores and online! Check them out!",
+			"itemList": [
+				"fye.000000889698311168",
+				"aec.fuko28671",
+				"fye.000000889698279949",
+				"fye.000000889698260909"
+			]
+		},
+		{
+			"title": "Movie Lover",
+			"image": "img/quiz/result/movie.jpg",
+			"description": "You can watch your favorite movies a hundred times and a few times more without being bored, but there are so many good films out there that are waiting for your discovery! So, we'd like to help out and put a few stuff in front of you - head to the Movies section for more!",
+			"itemList": [
+				"aec.mhv61180981dvd",
+				"aec.wd14767600dvd",
+				"aec.ctr48793dvd",
+				"fye.000000400377292419",
+				"aec.wd14760000dvd",
+				"aec.fox2332786dvd",
+				"aec.wd14899900dvd"
+			]
+		},
+		{
+			"title": "TV Enthusiast",
+			"image": "img/quiz/result/tv.jpg",
+			"description": "You can spend the entire night binge-watching the classics or the latest original shows. You might have a few favorite shows that you re-watch every once in a while, but you're also not afraid to give new pilot episodes a chance. Sounds like you? Then you might love these items like we do!",
+			"itemList": [
+				"aec.hbo1000697748dvd",
+				"aec.ctnw1000704139br",
+				"fye.000000732577741665",
+				"aec.fuko28671"
+			]
+		},
+		{
+			"title": "Music Fan",
+			"image": "img/quiz/result/music.jpg",
+			"description": "You know every songs and lyrics to your favorite band or singer, and not shy of exploring new genres of music out there while cherishing the oldies. Here are some latest jams from us for you to check out!",
+			"itemList": [
+				"aec.rpblb002821802.2",
+				"rovi.MR0004881748",
+				"aec.bbgt1007.2",
+				"aec.pppk701019.2",
+				"rovi.MR0004718812",
+				"fye.000000878615090118"
+			]
+		}
+	]
+}

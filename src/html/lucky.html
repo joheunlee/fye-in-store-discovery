@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to FYE!</title>
+    <link href="app.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="lib/fontawesome-all.min.css" />
+    <link rel="icon" type="image/png" href="img/linkicon.png" />
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106458924-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-106458924-1');
+    </script>
+
+  </head>
+  <body>
+    <div class="container">
+       
+      <!--first screen-->  
+      <div id="random-items" class="home">
+        <div class="random-items-container">
+          <h1 id="random-items-h1">Searching for random awesomeness<span class="dot-loading">.</span><span class="dot-loading">.</span><span class="dot-loading">.</span></h1>
+          <div id="random-image-area"><div><img id="random-img" src="" /></div></div>
+        </div>
+      </div>
+
+      <!--item landing-->
+      <div id="item-landing">
+        <video autoplay muted loop id="starburst-background" poster="img/ui/video-poster.jpg">
+          <source src="video/starburst.mp4" type="video/mp4" />
+        </video>
+        <div class="item-landing-content">
+          <div class="item-landing-subtitle">We found you:</div>
+          <div class="item-landing-image"><div class="item-landing-img-wrapper"><img id="item-landing-img" src="" /></div></div>
+          <div class="item-landing-name"></div>
+          <div class="item-landing-button-wrapper"><button class="cta" onclick="showItemDetails()">Learn More</button></div>
+      	</div>
+	  </div>
+
+      <!--item details-->
+      <div id="item-details">
+      	<a href="index.html" onclick="itemDetailsBackTrack()"><div class="item-details-close"><button><i class="fas fa-chevron-left fa-lg"></i><i class="fas fa-home fa-lg"></i></button></div></a>
+      	<div class="item-details-section item-details-info">
+          <div class="item-details-image">
+            <div class="item-details-primary-image-wrapper"><img id="item-details-primary-img" src="" /></div>
+            <div class="item-details-secondary-image-wrapper"><img id="item-details-secondary-img" src="" /></div>
+          </div>
+          <div class="item-details-text-content">
+            <div class="item-details-name product-name"></div>
+            <div class="item-details-price"></div>
+            <div class="item-details-description"></div>
+            <div class="item-details-rating">
+              <div class="item-details-rating-question">What do you think about this item?</div>
+              <input type="radio" name="rating" id="item-details-positive-check" onclick="itemPositiveClick()" /><label for="item-details-positive-check" class="item-details-positive"><i class="far fa-thumbs-up"></i><span>Awesome</span></label>
+              <input type="radio" name="rating" id="item-details-negative-check" onclick="itemNegativeClick()" /><label for="item-details-negative-check" class="item-details-negative"><i class="far fa-thumbs-down"></i><span>Meh</span></label>
+            </div>
+          </div>
+        </div>
+      	 <div class="item-details-section item-details-purchase">
+          <div class="item-details-purchase-content">
+            <div class="item-details-purchase-heading">
+              <span>Interested?</span> Here are ways to get it:
+            </div>
+            <div class="item-details-purchase-options">
+              <div class="item-details-purchase-option">
+                <div><img src="img/ui/numbers-01.png" /></div><div>Find it in <span id="item-details-purchase-section"></span> Section</div>
+              </div>
+              <div class="item-details-purchase-option">
+                <div><img src="img/ui/numbers-02.png" /></div><div>Ask the store associate</div>
+              </div>
+              <div class="item-details-purchase-option">
+                <div><img src="img/ui/numbers-03.png" /></div><div><span id="item-details-get-online">Get it online </span><span><a id="item-details-purchase-url" onclick="orderNowClick()" href="" target="_blank">Order Now</a></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      	<div class="item-details-find-another">
+      		<button onclick="findAnother()" class="flat-button">Find me another one</button>
+          <div class="item-details-price-disclaimer">*The price shown may be different from your local store's. Ask our store associate for details.</div>
+      	</div>
+      </div>
+    </div>
+        
+    
+
+    
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="lib/jQuery/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/scripts.js"></script>
+    <script src="lib/animsition.min.js"></script>
+    <script type="text/javascript" src="lib/slick/slick.min.js"></script>
+    <script>
+   
+   
+    </script>
+    <!--analytics.js-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-106458924-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+  </body>
+</html>
